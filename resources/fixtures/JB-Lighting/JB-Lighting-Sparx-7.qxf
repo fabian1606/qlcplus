@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Fabian Rafreider</Author>
+ </Creator>
+ <Manufacturer>JB-Lighting</Manufacturer>
+ <Model>Sparx 7</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Pan fine" Preset="PositionPanFine"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Tilt fine" Preset="PositionTiltFine"/>
+ <Channel Name="Maintenance - Color calibration">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="7">100% light Output</Capability>
+  <Capability Min="8" Max="15">color calibration rgb</Capability>
+  <Capability Min="16" Max="23">color calibration white</Capability>
+  <Capability Min="24" Max="32">linear color calibration (linear rgb curve)</Capability>
+  <Capability Min="33" Max="159">The same as on the top but for slow lightmixers</Capability>
+  <Capability Min="160" Max="207">nothing</Capability>
+  <Capability Min="208" Max="215">Camera mode 50Hz</Capability>
+  <Capability Min="216" Max="223">Camera mode 60Hz</Capability>
+  <Capability Min="224" Max="231">Camera mode FLEX</Capability>
+  <Capability Min="232" Max="239">nothing</Capability>
+  <Capability Min="240" Max="247">Reset (after 2 seconds)</Capability>
+  <Capability Min="248" Max="255">nothing</Capability>
+ </Channel>
+ <Channel Name="Shutter">
+  <Group Byte="0">Shutter</Group>
+  <Capability Min="0" Max="15">closed</Capability>
+  <Capability Min="16" Max="95">open</Capability>
+  <Capability Min="96" Max="110">pulsing &gt;20Hz (0.6-4.8s)</Capability>
+  <Capability Min="111" Max="111">open</Capability>
+  <Capability Min="112" Max="125">fade effekt</Capability>
+  <Capability Min="126" Max="126">open</Capability>
+  <Capability Min="127" Max="127">closed</Capability>
+  <Capability Min="128" Max="142">pulsing &lt;20Hz (0.6-4.8s)</Capability>
+  <Capability Min="143" Max="143">open</Capability>
+  <Capability Min="144" Max="158">pulsing closing (0.6-4.8s)</Capability>
+  <Capability Min="159" Max="159">closed</Capability>
+  <Capability Min="160" Max="174">shutter fade 0% (0.6-4.8s)</Capability>
+  <Capability Min="175" Max="175">open</Capability>
+  <Capability Min="176" Max="190">shutter fade 100% (0.6-4.8s)</Capability>
+  <Capability Min="191" Max="191">closed</Capability>
+  <Capability Min="192" Max="206">shutter random 100% (0.6-4.8s)</Capability>
+  <Capability Min="207" Max="207">open</Capability>
+  <Capability Min="208" Max="222">shutter random 0% (0.6-4.8s)</Capability>
+  <Capability Min="223" Max="223">closed</Capability>
+  <Capability Min="224" Max="238">shutter fade random 0% (0.6-4.8s)</Capability>
+  <Capability Min="239" Max="239">open</Capability>
+  <Capability Min="240" Max="254">shutter fade random 100% (0.6-4.8s)</Capability>
+  <Capability Min="255" Max="255">open</Capability>
+ </Channel>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Zoom" Preset="BeamZoomSmallBig"/>
+ <Channel Name="segment selection">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">no segments</Capability>
+  <Capability Min="1" Max="1">segment 1</Capability>
+  <Capability Min="2" Max="2">segment 2</Capability>
+  <Capability Min="3" Max="3">segment 3</Capability>
+  <Capability Min="4" Max="4">segment 4</Capability>
+  <Capability Min="5" Max="5">segment 5</Capability>
+  <Capability Min="6" Max="6">segment 6</Capability>
+  <Capability Min="7" Max="7">segment 7</Capability>
+  <Capability Min="8" Max="8">segment 8</Capability>
+  <Capability Min="9" Max="9">segment 9</Capability>
+  <Capability Min="10" Max="10">segment 10</Capability>
+  <Capability Min="11" Max="11">segment 11</Capability>
+  <Capability Min="12" Max="12">segment 12</Capability>
+  <Capability Min="13" Max="13">segment 13</Capability>
+  <Capability Min="14" Max="14">segment 14</Capability>
+  <Capability Min="15" Max="15">segment 15</Capability>
+  <Capability Min="16" Max="16">segment 16</Capability>
+  <Capability Min="17" Max="17">segment 17</Capability>
+  <Capability Min="18" Max="18">segment 18</Capability>
+  <Capability Min="19" Max="19">segment 19</Capability>
+  <Capability Min="20" Max="20">segment 20</Capability>
+  <Capability Min="21" Max="21">segment 21</Capability>
+  <Capability Min="22" Max="22">segment 22</Capability>
+  <Capability Min="23" Max="23">segment 23</Capability>
+  <Capability Min="24" Max="24">segment 24</Capability>
+  <Capability Min="25" Max="25">segment 25</Capability>
+  <Capability Min="26" Max="26">segment 26</Capability>
+  <Capability Min="27" Max="27">segment 27</Capability>
+  <Capability Min="28" Max="28">segment 28</Capability>
+  <Capability Min="29" Max="29">segment 29</Capability>
+  <Capability Min="30" Max="30">segment 30</Capability>
+  <Capability Min="31" Max="31">segment 31</Capability>
+  <Capability Min="32" Max="32">segment 32</Capability>
+  <Capability Min="33" Max="33">segment 33</Capability>
+  <Capability Min="34" Max="34">segment 34</Capability>
+  <Capability Min="35" Max="35">segment 35</Capability>
+  <Capability Min="36" Max="36">segment 36</Capability>
+  <Capability Min="37" Max="37">segment 37</Capability>
+  <Capability Min="38" Max="38">segment 38</Capability>
+  <Capability Min="39" Max="39">segment 39</Capability>
+  <Capability Min="40" Max="40">segment 40</Capability>
+  <Capability Min="41" Max="41">segment 41</Capability>
+  <Capability Min="42" Max="42">segment 42</Capability>
+  <Capability Min="43" Max="43">segment 43</Capability>
+  <Capability Min="44" Max="99">nothing</Capability>
+  <Capability Min="100" Max="104">numbers 0-4</Capability>
+  <Capability Min="105" Max="109">numbers 5-9</Capability>
+  <Capability Min="110" Max="110">smile</Capability>
+  <Capability Min="111" Max="111">big smile</Capability>
+  <Capability Min="112" Max="219">nothing</Capability>
+  <Capability Min="220" Max="220">static only center pixel</Capability>
+  <Capability Min="221" Max="221">static inner circle</Capability>
+  <Capability Min="222" Max="222">static outer circle</Capability>
+  <Capability Min="223" Max="223">static inner circle+center pixel</Capability>
+  <Capability Min="224" Max="224">static outer circle + center pixel</Capability>
+  <Capability Min="225" Max="225">static inner, outer circle</Capability>
+  <Capability Min="226" Max="255">nothing</Capability>
+ </Channel>
+ <Channel Name="Pattern Mode">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">Pattern fading</Capability>
+  <Capability Min="1" Max="1">Pattern changing</Capability>
+  <Capability Min="2" Max="2">next pattern (forwards)</Capability>
+  <Capability Min="3" Max="3">next pattern (backwards)</Capability>
+  <Capability Min="4" Max="4">Pixel random flash fast</Capability>
+  <Capability Min="5" Max="5">Pixel random snap open ramp down</Capability>
+  <Capability Min="6" Max="6">Pixel random flash slow</Capability>
+  <Capability Min="7" Max="7">Pixel random ramp open snap close</Capability>
+  <Capability Min="8" Max="8">Pixel Random flash fast random speed</Capability>
+  <Capability Min="9" Max="9">Pixel Random snap open ramp down random speed</Capability>
+  <Capability Min="10" Max="10">Pixel random flash slow random speed</Capability>
+  <Capability Min="11" Max="11">Pixel random ramp open snap close random speed</Capability>
+  <Capability Min="12" Max="31">static effekt</Capability>
+  <Capability Min="32" Max="32">Pattern fading #inactive foregroundColor</Capability>
+  <Capability Min="33" Max="33">Pattern changing #inactive foregroundColor</Capability>
+  <Capability Min="34" Max="34">next pattern (forwards) #inactive foregroundColor</Capability>
+  <Capability Min="35" Max="35">next pattern (backwards) #inactive foregroundColor</Capability>
+  <Capability Min="36" Max="36">Pixel random flash fast #inactive foregroundColor</Capability>
+  <Capability Min="37" Max="37">Pixel random snap open ramp down #inactive foregroundColor</Capability>
+  <Capability Min="38" Max="38">Pixel random flash slow #inactive foregroundColor</Capability>
+  <Capability Min="39" Max="39">Pixel random ramp open snap close #inactive foregroundColor</Capability>
+  <Capability Min="40" Max="40">Pixel Random flash fast random speed #inactive foregroundColor</Capability>
+  <Capability Min="41" Max="41">Pixel Random snap open ramp down random speed #inactive foregroundColor</Capability>
+  <Capability Min="42" Max="42">Pixel random flash slow random speed #inactive foregroundColor</Capability>
+  <Capability Min="43" Max="43">Pixel random ramp open snap close random speed #inactive foregroundColor</Capability>
+  <Capability Min="44" Max="63">static effekt #inactive foregroundColor</Capability>
+  <Capability Min="64" Max="64">Pattern fading #inactive backgroundColor</Capability>
+  <Capability Min="65" Max="65">Pattern changing #inactive backgroundColor</Capability>
+  <Capability Min="66" Max="66">next pattern (forwards) #inactive backgroundColor</Capability>
+  <Capability Min="67" Max="67">next pattern (backwards) #inactive backgroundColor</Capability>
+  <Capability Min="68" Max="68">Pixel random flash fast #inactive backgroundColor</Capability>
+  <Capability Min="69" Max="69">Pixel random snap open ramp down #inactive backgroundColor</Capability>
+  <Capability Min="70" Max="70">Pixel random flash slow #inactive backgroundColor</Capability>
+  <Capability Min="71" Max="71">Pixel random ramp open snap close #inactive backgroundColor</Capability>
+  <Capability Min="72" Max="72">Pixel Random flash fast random speed #inactive backgroundColor</Capability>
+  <Capability Min="73" Max="73">Pixel Random snap open ramp down random speed #inactive backgroundColor</Capability>
+  <Capability Min="74" Max="74">Pixel random flash slow random speed #inactive backgroundColor</Capability>
+  <Capability Min="75" Max="75">Pixel random ramp open snap close random speed #inactive backgroundColor</Capability>
+  <Capability Min="76" Max="95">static effekt #inactive backgroundColor</Capability>
+  <Capability Min="96" Max="96">Pattern fading #inactive glowing High Intensity</Capability>
+  <Capability Min="97" Max="97">Pattern changing #inactive glowing High Intensity</Capability>
+  <Capability Min="98" Max="98">next pattern (forwards) #inactive glowing High Intensity</Capability>
+  <Capability Min="99" Max="99">next pattern (backwards) #inactive glowing High Intensity</Capability>
+  <Capability Min="100" Max="100">Pixel random flash fast #inactive glowing High Intensity</Capability>
+  <Capability Min="101" Max="101">Pixel random snap open ramp down #inactive glowing High Intensity</Capability>
+  <Capability Min="102" Max="102">Pixel random flash slow #inactive glowing High Intensity</Capability>
+  <Capability Min="103" Max="103">Pixel random ramp open snap close #inactive glowing High Intensity</Capability>
+  <Capability Min="104" Max="104">Pixel Random flash fast random speed #inactive glowing High Intensity</Capability>
+  <Capability Min="105" Max="105">Pixel Random snap open ramp down random speed #inactive glowing High Intensity</Capability>
+  <Capability Min="106" Max="106">Pixel random flash slow random speed #inactive glowing High Intensity</Capability>
+  <Capability Min="107" Max="107">Pixel random ramp open snap close random speed #inactive glowing High Intensity</Capability>
+  <Capability Min="108" Max="127">static effekt #inactive glowing High Intensity</Capability>
+  <Capability Min="128" Max="128">Pattern fading #inactive glowing Low Intensity</Capability>
+  <Capability Min="129" Max="129">Pattern changing #inactive glowing Low Intensity</Capability>
+  <Capability Min="130" Max="130">next pattern (forwards) #inactive glowing Low Intensity</Capability>
+  <Capability Min="131" Max="131">next pattern (backwards) #inactive glowing Low Intensity</Capability>
+  <Capability Min="132" Max="132">Pixel random flash fast #inactive glowing Low Intensity</Capability>
+  <Capability Min="133" Max="133">Pixel random snap open ramp down #inactive glowing Low Intensity</Capability>
+  <Capability Min="134" Max="134">Pixel random flash slow #inactive glowing Low Intensity</Capability>
+  <Capability Min="135" Max="135">Pixel random ramp open snap close #inactive glowing Low Intensity</Capability>
+  <Capability Min="136" Max="136">Pixel Random flash fast random speed #inactive glowing Low Intensity</Capability>
+  <Capability Min="137" Max="137">Pixel Random snap open ramp down random speed #inactive glowing Low Intensity</Capability>
+  <Capability Min="138" Max="138">Pixel random flash slow random speed #inactive glowing Low Intensity</Capability>
+  <Capability Min="139" Max="139">Pixel random ramp open snap close random speed #inactive glowing Low Intensity</Capability>
+  <Capability Min="140" Max="159">static effekt #inactive glowing Low Intensity</Capability>
+  <Capability Min="160" Max="160">Pattern fading #inactive color spread foregroundColor</Capability>
+  <Capability Min="161" Max="161">Pattern changing #inactive color spread foregroundColor</Capability>
+  <Capability Min="162" Max="162">next pattern (forwards) #inactive color spread foregroundColor</Capability>
+  <Capability Min="163" Max="163">next pattern (backwards) #inactive color spread foregroundColor</Capability>
+  <Capability Min="164" Max="164">Pixel random flash fast #inactive color spread foregroundColor</Capability>
+  <Capability Min="165" Max="165">Pixel random snap open ramp down #inactive color spread foregroundColor</Capability>
+  <Capability Min="166" Max="166">Pixel random flash slow #inactive color spread foregroundColor</Capability>
+  <Capability Min="167" Max="167">Pixel random ramp open snap close #inactive color spread foregroundColor</Capability>
+  <Capability Min="168" Max="168">Pixel Random flash fast random speed #inactive color spread foregroundColor</Capability>
+  <Capability Min="169" Max="169">Pixel Random snap open ramp down random speed #inactive color spread foregroundColor</Capability>
+  <Capability Min="170" Max="170">Pixel random flash slow random speed #inactive color spread foregroundColor</Capability>
+  <Capability Min="171" Max="171">Pixel random ramp open snap close random speed #inactive color spread foregroundColor</Capability>
+  <Capability Min="172" Max="191">static effekt #inactive color spread foregroundColor</Capability>
+  <Capability Min="192" Max="235">macro range combined effects from secment, pattern mode , pattern channel</Capability>
+  <Capability Min="236" Max="255">nothing</Capability>
+ </Channel>
+ <Channel Name="Pattern effekt direction">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">inactive</Capability>
+  <Capability Min="1" Max="1">pattern 1 (.oO.oO.)</Capability>
+  <Capability Min="2" Max="2">pattern 2 (.oOo.oO)</Capability>
+  <Capability Min="3" Max="3">pattern 3 (.+#.+#.)</Capability>
+  <Capability Min="4" Max="4">pattern 4 (.+#◎O_.)</Capability>
+  <Capability Min="5" Max="5">pattern 5 (.+#+._.)</Capability>
+  <Capability Min="6" Max="6">pattern 4 (ʘoʘoʘoʘ)</Capability>
+  <Capability Min="7" Max="7">pattern 7 (.Oo.Oo.)</Capability>
+  <Capability Min="8" Max="127">nothing</Capability>
+  <Capability Min="128" Max="135">random patern selection 1 - 7</Capability>
+  <Capability Min="136" Max="255">nothing</Capability>
+ </Channel>
+ <Channel Name="Pattern speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="126">forwards fast to slow</Capability>
+  <Capability Min="127" Max="128">Stop</Capability>
+  <Capability Min="129" Max="255">backwards slow to fast</Capability>
+ </Channel>
+ <Channel Name="Color spread">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">no color gradient</Capability>
+  <Capability Min="1" Max="63">color gradient indexable</Capability>
+  <Capability Min="64" Max="94">color gradient moving forwards fast to slow</Capability>
+  <Capability Min="95" Max="96">stop</Capability>
+  <Capability Min="97" Max="127">color gradient moving backwards slow to fast</Capability>
+  <Capability Min="128" Max="191">color gradient indexable backwards</Capability>
+  <Capability Min="192" Max="222">color gradient moving forwards slow to fast</Capability>
+  <Capability Min="223" Max="223">stop</Capability>
+  <Capability Min="224" Max="255">color gradient moving backwards fast to slow</Capability>
+ </Channel>
+ <Channel Name="Sparkle">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="0">no Sparkle</Capability>
+  <Capability Min="1" Max="255">Sparkle min to max</Capability>
+ </Channel>
+ <Channel Name="Sparkle speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="31">Sparkle speed fading slow to fast</Capability>
+  <Capability Min="32" Max="63">Sparkle effect changing slow to fast</Capability>
+  <Capability Min="64" Max="255">fade and change looping</Capability>
+ </Channel>
+ <Channel Name="CTC mixer" Preset="ColorCTCMixer"/>
+ <Channel Name="Color presets">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="1" >no color presets -&gt; rgb color mixing</Capability>
+  <Capability Min="2" Max="3" Preset="ColorMacro" Res1="#ffffff">white</Capability>
+  <Capability Min="4" Max="7"  Preset="ColorDoubleMacro" Res1="#ffffff" Res2="#ff0000">white / red</Capability>
+  <Capability Min="8" Max="11" Preset="ColorMacro" Res1="#ff0000">red</Capability>
+  <Capability Min="12" Max="15" Preset="ColorDoubleMacro" Res1="#ff0000" Res2="#ffff00">red / yellow</Capability>
+  <Capability Min="16" Max="19" Preset="ColorMacro" Res1="#ffff00">yellow</Capability>
+  <Capability Min="20" Max="23"  Preset="ColorDoubleMacro" Res1="#ffff00" Res2="#ff00ff">yellow / magenta</Capability>
+  <Capability Min="24" Max="27" Preset="ColorMacro" Res1="#ffffff">magenta</Capability>
+  <Capability Min="28" Max="31"  Preset="ColorDoubleMacro" Res1="#ff00ff" Res2="#008000">magenta / green</Capability>
+  <Capability Min="32" Max="35" Preset="ColorMacro" Res1="#008000">green</Capability>
+  <Capability Min="36" Max="39"  Preset="ColorDoubleMacro" Res1="#008000" Res2="#ffa500">green / orange</Capability>
+  <Capability Min="40" Max="43" Preset="ColorMacro" Res1="#ffa500">orange</Capability>
+  <Capability Min="44" Max="47"  Preset="ColorDoubleMacro" Res1="#ffa500" Res2="#0000ff">orage / blue</Capability>
+  <Capability Min="48" Max="51" Preset="ColorMacro" Res1="#0000ff">blue</Capability>
+  <Capability Min="52" Max="55"  Preset="ColorDoubleMacro" Res1="#0000ff" Res2="#40e0d0">blue / turquoise</Capability>
+  <Capability Min="56" Max="59" Preset="ColorMacro" Res1="#40e0d0">turquoise</Capability>
+  <Capability Min="60" Max="63" Preset="ColorDoubleMacro" Res1="#40e0d0" Res2="#ffffff">turquoise / white</Capability>
+  <Capability Min="64" Max="64">White 2700 Kelvin</Capability>
+  <Capability Min="65" Max="65">White 2700 Kelvin , halogen dimming curve</Capability>
+  <Capability Min="66" Max="66">White 3200 Kelvin</Capability>
+  <Capability Min="67" Max="67">White 3200 Kelvin, halogen dimming curve</Capability>
+  <Capability Min="68" Max="68">White 4200 Kelvin</Capability>
+  <Capability Min="69" Max="69">White 5600 Kelvin</Capability>
+  <Capability Min="70" Max="70">White 6500 Kelvin</Capability>
+  <Capability Min="71" Max="191">White 8000 Kelvin</Capability>
+  <Capability Min="192" Max="222">color changing fast to slow</Capability>
+  <Capability Min="223" Max="223">stop</Capability>
+  <Capability Min="224" Max="255">color changing slow to fast</Capability>
+ </Channel>
+ <Channel Name="Pan tilt speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="3">no speed limit</Capability>
+  <Capability Min="4" Max="255">speed limit fast to slow</Capability>
+ </Channel>
+ <Channel Name="Effekt speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="3">no speed limit</Capability>
+  <Capability Min="4" Max="255">speed limit slow to fast</Capability>
+ </Channel>
+ <Channel Name="Blackout move">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="0">no function</Capability>
+  <Capability Min="1" Max="70">segment selection for shutter effects together with the shutter channel</Capability>
+  <Capability Min="71" Max="95">no function</Capability>
+  <Capability Min="96" Max="127">Blackout Pan/Tilt</Capability>
+  <Capability Min="128" Max="159">Blackout colorchanger</Capability>
+  <Capability Min="160" Max="223">no function</Capability>
+  <Capability Min="224" Max="255">Balckout Pan/Tilt + colorchanger fadetime adjustable</Capability>
+ </Channel>
+ <Channel Name="Red #glow" Preset="IntensityRed"/>
+ <Channel Name="Red fine #glow" Preset="IntensityRedFine"/>
+ <Channel Name="Green #glow" Preset="IntensityGreen"/>
+ <Channel Name="Green fine #glow" Preset="IntensityGreenFine"/>
+ <Channel Name="Blue #glow" Preset="IntensityBlue"/>
+ <Channel Name="Blue fine #glow" Preset="IntensityBlueFine"/>
+ <Channel Name="White #glow" Preset="IntensityWhite"/>
+ <Channel Name="White fine #glow" Preset="IntensityWhiteFine"/>
+ <Channel Name="Red #main" Preset="IntensityRed"/>
+ <Channel Name="Red fine #main" Preset="IntensityRedFine"/>
+ <Channel Name="Green #main" Preset="IntensityGreen"/>
+ <Channel Name="Green fine #main" Preset="IntensityGreenFine"/>
+ <Channel Name="Blue #main" Preset="IntensityBlue"/>
+ <Channel Name="Blue fine #main" Preset="IntensityBlueFine"/>
+ <Channel Name="White #main" Preset="IntensityWhite"/>
+ <Channel Name="White fine #main" Preset="IntensityWhiteFine"/>
+ <Channel Name="Red #pattern" Preset="IntensityRed"/>
+ <Channel Name="Red fine #pattern" Preset="IntensityRedFine"/>
+ <Channel Name="Green #pattern" Preset="IntensityGreen"/>
+ <Channel Name="Green fine #pattern" Preset="IntensityGreenFine"/>
+ <Channel Name="Blue #pattern" Preset="IntensityBlue"/>
+ <Channel Name="Blue fine #pattern" Preset="IntensityBlueFine"/>
+ <Channel Name="White #pattern" Preset="IntensityWhite"/>
+ <Channel Name="White fine #pattern" Preset="IntensityWhiteFine"/>
+ <Mode Name="32ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Maintenance - Color calibration</Channel>
+  <Channel Number="5">Shutter</Channel>
+  <Channel Number="6">Dimmer</Channel>
+  <Channel Number="7">Zoom</Channel>
+  <Channel Number="8">segment selection</Channel>
+  <Channel Number="9">Pattern Mode</Channel>
+  <Channel Number="10">Pattern effekt direction</Channel>
+  <Channel Number="11">Pattern speed</Channel>
+  <Channel Number="12">Color spread</Channel>
+  <Channel Number="13">Sparkle</Channel>
+  <Channel Number="14">Sparkle speed</Channel>
+  <Channel Number="15">CTC mixer</Channel>
+  <Channel Number="16">Color presets</Channel>
+  <Channel Number="17">Pan tilt speed</Channel>
+  <Channel Number="18">Effekt speed</Channel>
+  <Channel Number="19">Blackout move</Channel>
+  <Channel Number="20">Red #glow</Channel>
+  <Channel Number="21">Green #glow</Channel>
+  <Channel Number="22">Blue #glow</Channel>
+  <Channel Number="23">White #glow</Channel>
+  <Channel Number="24">Red #main</Channel>
+  <Channel Number="25">Green #main</Channel>
+  <Channel Number="26">Blue #main</Channel>
+  <Channel Number="27">White #main</Channel>
+  <Channel Number="28">Red #pattern</Channel>
+  <Channel Number="29">Green #pattern</Channel>
+  <Channel Number="30">Blue #pattern</Channel>
+  <Channel Number="31">White #pattern</Channel>
+ </Mode>
+ <Mode Name="44ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Maintenance - Color calibration</Channel>
+  <Channel Number="5">Shutter</Channel>
+  <Channel Number="6">Dimmer</Channel>
+  <Channel Number="7">Zoom</Channel>
+  <Channel Number="8">segment selection</Channel>
+  <Channel Number="9">Pattern Mode</Channel>
+  <Channel Number="10">Pattern effekt direction</Channel>
+  <Channel Number="11">Pattern speed</Channel>
+  <Channel Number="12">Color spread</Channel>
+  <Channel Number="13">Sparkle</Channel>
+  <Channel Number="14">Sparkle speed</Channel>
+  <Channel Number="15">CTC mixer</Channel>
+  <Channel Number="16">Color presets</Channel>
+  <Channel Number="17">Pan tilt speed</Channel>
+  <Channel Number="18">Effekt speed</Channel>
+  <Channel Number="19">Blackout move</Channel>
+  <Channel Number="20">Red #glow</Channel>
+  <Channel Number="21">Red fine #glow</Channel>
+  <Channel Number="22">Green #glow</Channel>
+  <Channel Number="23">Green fine #glow</Channel>
+  <Channel Number="24">Blue #glow</Channel>
+  <Channel Number="25">Blue fine #glow</Channel>
+  <Channel Number="26">White #glow</Channel>
+  <Channel Number="27">White fine #glow</Channel>
+  <Channel Number="28">Red #main</Channel>
+  <Channel Number="29">Red fine #main</Channel>
+  <Channel Number="30">Green #main</Channel>
+  <Channel Number="31">Green fine #main</Channel>
+  <Channel Number="32">Blue #main</Channel>
+  <Channel Number="33">Blue fine #main</Channel>
+  <Channel Number="34">White #main</Channel>
+  <Channel Number="35">White fine #main</Channel>
+  <Channel Number="36">Red #pattern</Channel>
+  <Channel Number="37">Red fine #pattern</Channel>
+  <Channel Number="38">Green #pattern</Channel>
+  <Channel Number="39">Green fine #pattern</Channel>
+  <Channel Number="40">Blue #pattern</Channel>
+  <Channel Number="41">Blue fine #pattern</Channel>
+  <Channel Number="42">White #pattern</Channel>
+  <Channel Number="43">White fine #pattern</Channel>
+ </Mode>
+ <Mode Name="24ch">
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt fine</Channel>
+  <Channel Number="4">Maintenance - Color calibration</Channel>
+  <Channel Number="5">Shutter</Channel>
+  <Channel Number="6">Dimmer</Channel>
+  <Channel Number="7">Zoom</Channel>
+  <Channel Number="8">segment selection</Channel>
+  <Channel Number="9">Pattern Mode</Channel>
+  <Channel Number="10">Pattern effekt direction</Channel>
+  <Channel Number="11">Pattern speed</Channel>
+  <Channel Number="12">Color spread</Channel>
+  <Channel Number="13">Sparkle</Channel>
+  <Channel Number="14">Sparkle speed</Channel>
+  <Channel Number="15">CTC mixer</Channel>
+  <Channel Number="16">Color presets</Channel>
+  <Channel Number="17">Pan tilt speed</Channel>
+  <Channel Number="18">Effekt speed</Channel>
+  <Channel Number="19">Blackout move</Channel>
+  <Channel Number="20">Red #main</Channel>
+  <Channel Number="21">Green #main</Channel>
+  <Channel Number="22">Blue #main</Channel>
+  <Channel Number="23">White #main</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="4" DegreesMax="40"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
